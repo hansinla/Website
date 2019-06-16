@@ -1,0 +1,239 @@
+$orange:    rgb(211, 73,  39);
+$yellow:    rgb(254, 208, 29 );
+$green:     rgb(130, 163, 87);  
+$paleblue:  rgb(159, 185, 194);  
+$deepblue:  rgb(54,  134, 167); 
+
+
+.box {
+  background-color:  $deepblue !important;
+  border: 1px solid  $deepblue !important; 
+}
+
+.fancybox-skin {
+      background-color: $deepblue; /* or whatever */
+    }
+
+body {
+  background-color: $paleblue;
+}
+
+.itemHeader{
+  color: $deepblue;
+}
+
+.large {
+  font-size:150%;
+  color: $deepblue;
+}
+
+.headerPict {
+  max-width: 250px;
+  margin-top: -7px;
+}
+
+.headerOffset{
+  padding-left: 10px;
+}
+
+.navbar-custom {
+    color: $deepblue;
+    background-color: $paleblue;
+}
+
+.active{
+  background-color: $yellow;
+}
+
+
+.itemBar {
+	background-color: $deepblue;
+	color: white;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.itemBarGray {
+  background-color: $deepblue;
+  color: white;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.border-row {
+    border-bottom: 1px solid $deepblue;
+    margin: 20px;
+}
+
+.well {
+  background-color: rgba(242, 242, 242, 0.8) !important;
+ }
+
+.popover{
+  max-width: none;
+  white-space: nowrap;
+  font-size: 1.1em;
+}
+
+
+ #contact{
+      margin-top: 100px;
+}
+
+ #twitter{
+ 	float: left;
+  margin-left: 20px;
+ 	max-height: 50px;
+ }
+
+#facebook{
+	max-height: 50px;
+ }
+
+ #instagram{
+	max-height: 50px;
+  float: right;
+  margin-right: 20px;
+ }
+
+ #webvideo{
+  max-width: 768px;
+ }
+
+ a {
+    color: inherit;
+ }
+
+ a:hover{
+    color: inherit;
+ }
+
+h2 {
+  color: $deepblue;
+  animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+
+p{
+   animation-delay:0.3s;
+  -moz-animation-delay:0.3s;
+  -webkit-animation-delay:0.3s;
+}
+
+h5 {
+  text-align: center;
+  color: $deepblue;
+  animation-delay:0.4s;
+   -moz-animation-delay:0.4s;
+   -webkit-animation-delay:0.4s;
+}
+
+img {
+  animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+
+#logo {
+  margin-top: 300px;
+  width: 600px;
+  height: 80px;
+  animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+
+#linktoenter {
+  animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  -webkit-animation-delay:1.2s;
+}
+
+video#bgvid {
+  position: fixed;
+  right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(assets/INTERNET_BG_poster.jpg) no-repeat;
+  background-size: cover;
+
+}
+
+video { display: block; }
+
+@media screen and (max-device-width: 800px) {
+  body { background: url(assets/INTERNET_BG_poster.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+#well01 {
+   animation-delay:0.4s;
+  -moz-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+
+}
+
+#well02 {
+   animation-delay:0.6s;
+  -moz-animation-delay:0.6s;
+  -webkit-animation-delay:0.6s;
+
+}
+
+#well03 {
+   animation-delay:0.8s;
+  -moz-animation-delay:0.8s;
+  -webkit-animation-delay:0.8s;
+
+}
+
+#well04 {
+   animation-delay:1.0s;
+  -moz-animation-delay:1.0s;
+  -webkit-animation-delay:1.0s;
+
+}
+
+#well05 {
+   animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  -webkit-animation-delay:1.2s;
+
+}
+
+#well06 {
+   animation-delay:1.4s;
+  -moz-animation-delay:1.4s;
+  -webkit-animation-delay:1.4s;
+
+}
+
+#well07 {
+   animation-delay:1.6s;
+  -moz-animation-delay:1.6s;
+  -webkit-animation-delay:1.6s;
+
+}
+
+#well08 {
+   animation-delay:1.8s;
+  -moz-animation-delay:1.8s;
+  -webkit-animation-delay:1.8s;
+
+}
+
+#well09 {
+   animation-delay:2.0s;
+  -moz-animation-delay:2.0s;
+  -webkit-animation-delay:2.0s;
+
+}
+
+#well10 {
+   animation-delay:2.2s;
+  -moz-animation-delay:2.2s;
+  -webkit-animation-delay:2.2s;
+
+}
+

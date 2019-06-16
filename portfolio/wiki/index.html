@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wikiApp">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Wiki Viewer</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="http://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+    <script src="wiki.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+    
+
+    <div class="container container-fluid">
+      <div class="col-md-12" ng-controller="mainController">
+      <div class="top-bar"></div>
+        <div class="jumbotron dark-blue">
+          <h1 class="text-center">Wiki Viewer</h1>
+        </div>
+
+        
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
+          <input type="text" class="search-query form-control" placeholder="Search" ng-model="searchStr" aria-describedby="basic-addon1" ng-keypress="getWikiData($event)">
+        </div>
+        <hr>
+        <div class="text-center">
+          <button type="button" class="btn btn-default" ng-click="getRandom()">Random Article</button>
+        </div>
+
+        <hr>
+        <div ng-repeat="entry in wikiResponse">
+          <div class="well">
+            <h3> {{ entry.headline }} </h3>
+            <a ng-href=" {{ entry.page }} " target="_blank">
+            <p> {{ entry.body }} </p>
+            </a>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

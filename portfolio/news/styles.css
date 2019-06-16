@@ -1,0 +1,57 @@
+body{
+	background-color: #C69C71;
+}
+
+.banner{
+	background-color: #492c14;
+	text-align: center;
+	padding: 14px 0px 14px 0px;
+	margin: -10px;
+}
+
+.banner img{
+	width: 50%;
+}
+
+h1{
+	text-align: center;
+	font-family: monospace;
+}
+
+.thumb{
+	width: 200px;
+	max-width: 200px;
+	max-height: 200px;
+	padding: 5px;
+}
+
+.news_block{
+	width: 200px;
+	background-color: white;
+	height: 300px;
+	border-radius: 8px;
+	margin: 25px;
+}
+
+.row_break{
+	height: 25px;
+}
+
+.text_block{
+	padding-left: 8px;
+	text-align: left;
+}
+
+.myButton{
+	margin-right: 8px;
+}
+
+#news_feed{
+	margin: 0 auto;
+}
+
+#date_posted{
+	font-size: .8em;
+	text-align: center;
+	margin-left: -5px;
+}

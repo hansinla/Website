@@ -1,0 +1,91 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+	font-family:"Digital-7 Mono";
+	src: url("fonts/digital-7__mono_.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+
+body{
+	font-family: Helvetica;
+	padding: 10px;
+}
+
+.spacer{
+	width: 400px;
+	height: 15px;
+}
+.spacer-small{
+	width: 260px;
+	height: 15px;
+}
+
+
+
+.numbers{
+	margin-left: 10px;
+	font-size: 1.3em;
+	width: 80px;
+	height: 40px;
+	background-color: #cccccc;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#bfbfbf), color-stop(100%, #999999));
+	background-image:-webkit-linear-gradient(top, #bfbfbf 0%, #999999 100%);
+	background-image:-moz-linear-gradient(top, #bfbfbf, #999999 100%);
+	background-image:-o-linear-gradient(top, #bfbfbf, #999999 100%);
+	background-image:-khtml-linear-gradient(top, #bfbfbf, #999999 100%);
+	background-image:-ms-linear-gradient(top, #bfbfbf 0%, #999999 100%);
+	background-image:linear-gradient(top, #bfbfbf, #999999 100%);
+	background-repeat:repeat-x;
+	-webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+	-khtml-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+
+.enter{
+	margin-top: 15px;
+	height: 100px;
+	float: right;
+	margin-right: 15px;
+}
+
+.spacebar{
+	width: 174px;
+}
+
+.button-row{
+	margin-left: 8px;
+}
+
+.last{
+	margin-top: -55px;
+}
+
+#calculator{
+	background-color: #A1A1A1;
+	background-image: url('images/background.jpg');
+	width: 400px;
+	height: 480px;
+	border-radius: 12px;
+	border: solid 2px black;
+
+
+}
+
+#display{
+	font-family: 'Digital-7 Mono', monospace;
+	font-size: 4em;
+	text-align: right;
+	height: 80px;
+	margin: 5px 10px 10px 10px;
+	padding-right: 10px;
+	border: solid 2px black;
+	border-radius: 10px;
+	background-color: #8EA58B;
+	-webkit-filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.5));
+	filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.5));
+}

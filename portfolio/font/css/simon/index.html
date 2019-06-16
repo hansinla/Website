@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon</title>
+
+	
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+	<div class="banner"><img src="images/freecodecamp_logo_noBG2.png"></div>
+	
+	<div id="game"><label id="level">0</label>
+			<button id="3" class="game_button"></button><button id="0" class="game_button"></button>
+			<button id="2" class="game_button"></button><button id="1" class="game_button"></button>
+
+	</div>
+	<div id="panel">
+		<div class="form-inline">
+			<div class="controls-row">
+            	<label class="radio control-label" id="strict_label">Strict Mode</label>
+            	<label class="radio-inline">
+                	<input checked type="radio" name="inlineRadioOptions" id="inlineRadio1" value="true"> On
+            	</label>
+            	<label class="radio-inline">
+              		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="false"> Off
+            	</label>
+            </div>
+        </div>
+		<button type="button" class="btn btn-warning btn-lg" id="start">Start Game</button>
+	</div>
+	<div id="preload-01"></div>
+	<div id="preload-02"></div>
+	<div id="preload-03"></div>
+	<div id="preload-04"></div>
+
+
+	<!-- External Scripts -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="scripts/simon.js"></script>
+
+	<script>
+		function preloader() {
+			if (document.getElementById) {
+				document.getElementById("preload-01").style.background = "url(images/simon_green.png) no-repeat -9999px -9999px"; 
+				document.getElementById("preload-02").style.background = "url(images/simon_red.png) no-repeat -9999px -9999px";
+				document.getElementById("preload-03").style.background = "url(images/simon_yellow.png) no-repeat -9999px -9999px";
+				document.getElementById("preload-04").style.background = "url(images/simon_blue.png) no-repeat -9999px -9999px";
+				console.log("Images loaded");
+			}
+		}
+
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function() {
+					if (oldonload) {
+						oldonload();
+					}
+					func();
+				};
+			}
+		}
+
+		addLoadEvent(preloader);
+
+	</script>
+
+</body>
+</html>

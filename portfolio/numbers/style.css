@@ -1,0 +1,62 @@
+body{
+	font-family: Helvetica;
+	background-color: #CDBA96;
+}
+
+#banner{
+	margin: -25px -10px 0px -10px;
+	padding-top: 15px;
+	height: 80px;
+	background-color: #8B3A3A;
+	color: white;
+	text-align: center;
+}
+
+.well{
+	background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#separator{
+	height: 100px;
+}
+
+.numberRow{
+	margin: 20px auto;
+	width: 60%;
+	text-align: center;
+}
+
+
+.header{
+	text-align: center;
+}
+
+.number{
+	width: 30px;
+	height: 35px;
+	margin-top: 5px;
+	margin-bottom: 8px;
+	padding: 5px 2px 2px 2px;
+	border-radius: 5px;
+	font-size: 1.3em;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+button{
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 120px;
+	height: 40px;
+	font-size: 1.0em;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.btn{
+	text-align: center;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

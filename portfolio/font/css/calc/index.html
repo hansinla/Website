@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calcApp">
+<head>
+	<title>FreeCodeCamp Calculator</title>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<script src="calc.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body ng-controller="mainController">
+	<div class="container">
+		<div id="calculator">
+			<div class="spacer">&nbsp;</div>
+			<div id="display">{{ display.value | limitTo : 14}}</div>
+			<div class="spacer">&nbsp;</div>
+			<div class="row button-row">
+				<input type="button" class="btn numbers" value="MC" ng-click="memory.clear()">
+				<input type="button" class="btn numbers" value="M+" ng-click="memory.add()">
+				<input type="button" class="btn numbers" value="M-" ng-click="memory.sub()">
+				<input type="button" class="btn numbers" value="MR" ng-click="memory.recall()">
+			</div>
+			<div class="spacer">&nbsp;</div>
+			<div class="row button-row">
+				<input type="button" class="btn numbers" value="C" ng-click="resetAll()">
+				<input type="button" class="btn numbers" value="&plusmn;" ng-click="display.negative()">
+				<input type="button" class="btn numbers" value="/" ng-click="display.addOperator(1)">
+				<input type="button" class="btn numbers" value="x" ng-click="display.addOperator(2)">
+			</div>
+			<div class="spacer">&nbsp;</div>
+			<div class="row button-row">
+				<input type="button" class="btn numbers" value="7" ng-click="display.addToDisplay(7)">
+				<input type="button" class="btn numbers" value="8" ng-click="display.addToDisplay(8)">
+				<input type="button" class="btn numbers" value="9" ng-click="display.addToDisplay(9)">
+				<input type="button" class="btn numbers" value="-" ng-click="display.addOperator(3)">
+			</div>
+			<div class="spacer">&nbsp;</div>
+			<div class="row button-row">
+				<input type="button" class="btn numbers" value="4" ng-click="display.addToDisplay(4)">
+				<input type="button" class="btn numbers" value="5" ng-click="display.addToDisplay(5)">
+				<input type="button" class="btn numbers" value="6" ng-click="display.addToDisplay(6)">
+				<input type="button" class="btn numbers" value="+" ng-click="display.addOperator(4)">
+			</div>
+			<input type="button" class="btn numbers enter" value="=" ng-click="display.performOperation()">
+			
+			<div class="spacer">&nbsp;</div>
+			<div class="row button-row">
+				<input type="button" class="btn numbers" value="1" ng-click="display.addToDisplay(1)">
+				<input type="button" class="btn numbers" value="2" ng-click="display.addToDisplay(2)">
+				<input type="button" class="btn numbers" value="3" ng-click="display.addToDisplay(3)">
+			</div>
+
+			<div class="spacer-small">&nbsp;</div>
+			<div class="row button-row last">
+				<input type="button" class="btn numbers spacebar" value="0" ng-click="display.addToDisplay(0)">
+				<input type="button" class="btn numbers" value="." ng-click="display.insertPeriod()">
+			</div>
+			
+
+
+
+
+
+
+		</div>
+	</div>	
+
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

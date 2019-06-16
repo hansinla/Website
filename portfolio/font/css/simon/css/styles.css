@@ -1,0 +1,63 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+	font-family:"Digital-7 Mono";
+	src: url("../fonts/digital-7__mono_.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
+}
+
+.banner{
+	background-color: #492c14;
+	text-align: center;
+	padding: 14px 0px 14px 0px;
+	margin: -10px;
+}
+
+.banner img{
+	width: 50%;
+}
+
+#game{
+	background-image: url('../images/simon_dark.png');
+	background-size: 500px;
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	margin: 30px auto;
+	position: relative;
+}
+
+#game img{
+	width: 500px;
+}
+
+#panel{
+	width: 500px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+#start{
+	margin-top: 12px;
+}
+
+.game_button{
+	width: 250px;
+	height: 250px;
+	background-color: rgba(0,0,0,0);
+	border: none;
+}
+
+#level{
+	font-family: 'Digital-7 Mono', monospace;
+	font-size: 4em;
+	color: red;
+	position: absolute;
+	left: 190px;
+	top: 250px;
+}
+
+#strict_label{
+	margin-right: 5px;
+	font-weight: normal;
+}

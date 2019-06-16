@@ -1,0 +1,24 @@
+body{
+	background-color: #1874CD;
+}
+
+.dark-blue{
+	background-color: #104E8B;
+	color: white;
+	padding-top: 1em;
+}
+
+.top-bar{
+	margin-top: 1em;
+}
+
+.well:hover{
+	border-color: #FF4500;
+	border-width: 3px;
+	border-radius: 10px;
+	-webkit-transition: border-width 0.15s linear;
+  	-moz-transition: border-width 0.15s linear;
+  	-o-transition: border-width 0.15s linear;
+  	transition: border-width 0.15s linear;
+
+}

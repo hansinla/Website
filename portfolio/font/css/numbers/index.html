@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mega Millions Lucky Numbers</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	<div id="banner"><h1>Lucky Numbers</h1></div>
+
+	<div class="separator">&nbsp;</div>
+
+	<div class="header"><h3>Mega Millions</h3></div>
+	
+	<div class="numberRow">
+		<span>
+			<div class="number" id="meg0">00</div>
+			<div class="number" id="meg1">00</div>
+			<div class="number" id="meg2">00</div>
+			<div class="number" id="meg3">00</div>
+			<div class="number" id="meg4">00</div>
+			<span>mega:
+				<div class="number" id="mega">00</div>
+			</span>
+		</span>
+	</div>
+
+	<div class="col-md-6 col-centered"><hr></div>
+
+	<div class="header"><h3>Super Lotto</h3></div>
+
+	<div class="numberRow">
+		<span>
+			<div class="number" id="num0">00</div>
+			<div class="number" id="num1">00</div>
+			<div class="number" id="num2">00</div>
+			<div class="number" id="num3">00</div>
+			<div class="number" id="num4">00</div>
+			<span>extra:
+				<div class="number" id="super">00</div>
+			</span>
+		</span>
+	</div>
+
+	<div class="col-md-6 col-centered"><hr></div>
+	
+	<div class="text-center">
+		<div class="btn"><button onclick="getNumbers()">Get Numbers</button></div>
+	</div>
+
+	<div class="col-md-6 col-centered"><hr></div>
+
+	<div class="col-md-6 col-centered">
+		<div class="well" id="explanation">
+			<p>Generate lottery numbers, taking into consideration the frequency of past numbers drawn.</p>
+		</div>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="lottery.js"></script>
+
+</body>
+</html>
