@@ -1,5 +1,5 @@
  var placeholderImageUrl = "https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png";
-var fccUrl = "http://www.freecodecamp.com/news/hot";
+var fccUrl = "https://www.freecodecamp.com/news/hot";
 
 $(document).ready(function() {
 	getNews();
@@ -34,7 +34,7 @@ function showResults(results){
     formattedHTML += "<div><img class='thumb' src='" + results[i].author.picture + "'></div>";
     formattedHTML += "<div class='text_block'>";
     formattedHTML += "<div><a href='" + results[i].link + "'>" + headline + "</a></div>";
-    formattedHTML += "<div>by - <a href='http://www.freecodecamp.com/" + results[i].author.username + "'>" + results[i].author.username + "</a></div>";
+    formattedHTML += "<div>by - <a href='https://www.freecodecamp.com/" + results[i].author.username + "'>" + results[i].author.username + "</a></div>";
     formattedHTML += "<div><i class='fa fa-heart'>&nbsp" + results[i].rank +  "</i><a href='http://www.freecodecamp.com/news/" + results[i].storyLink + "'><button class='myButton btn btn-primary btn-sm pull-right' >discuss</button></a></div>";
     formattedHTML += "<br><div id='date_posted'>Posted on: " + date.toLocaleDateString('en-US') + "</div>";
 

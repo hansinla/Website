@@ -22,9 +22,9 @@ myApp.controller('mainController', ['$scope','$http', '$interval', '$window', fu
     };
 
     $scope.getRequest = function(str){
-    	var url = 'http://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
+    	var url = 'https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
     	var callback = '&callback=JSON_CALLBACK';
-    	var page = 'http://en.wikipedia.org/?curid=';
+    	var page = 'https://en.wikipedia.org/?curid=';
         $scope.wikiResponse = [];
         
     	//angular http request for wiki
@@ -49,9 +49,9 @@ myApp.controller('mainController', ['$scope','$http', '$interval', '$window', fu
 
         $scope.getRandom = function(){
             console.log("Random article");
-            var url = 'http://en.wikipedia.org//w/api.php?action=query&list=random&format=json&rnlimit=1';
+            var url = 'https://en.wikipedia.org//w/api.php?action=query&list=random&format=json&rnlimit=1';
             var callback = '&callback=JSON_CALLBACK';
-            var page = 'http://en.wikipedia.org/?curid=';
+            var page = 'https://en.wikipedia.org/?curid=';
             $scope.wikiResponse = [];
 
             $http.jsonp(url + callback).
