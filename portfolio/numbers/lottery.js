@@ -1,7 +1,7 @@
 var disclaimer ='<h3>Please gamble responsibly.</h3><p> When you borrow money to play and spend above your budget using money allocated for other purposes, it can ultimately lead to more significant problems for you and your family.</p><p>If you think that you or someone you care about might have a gambling problem, call the 1-800-GAMBLER Helpline or visit the <a href="http://problemgambling.securespsites.com/ccpgwebsite/default.aspx">Office of Problem Gambling</a> for additional information and resources.</p>';
 
 function getNumbers(){
-	var baseUrl = "http://www.calottery.com/sitecore/content/Miscellaneous/download-numbers/?GameName=";
+	var baseUrl = "https://www.calottery.com/sitecore/content/Miscellaneous/download-numbers/?GameName=";
 	var suffix = "&Order=No";
 
 	var handlingSuperLotto = true;
