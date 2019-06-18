@@ -12,46 +12,17 @@
     <!-- Load Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-					<a href="#" class="navbar-brand scroll-top logo"><b>HANS VAN RIET</b></a>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">About</a></li>
-                        <li><a href="#skills" class="scroll-link">Skills</a></li>
-                        <li><a href="#experience" class="scroll-link">Experience</a></li>
-                        <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-                        <li><a href="#contactUs" class="scroll-link">Contact</a></li>
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
-        </div>
-        <!--/.container-->
-    </header>
-    <!--/.header-->
+
 
 
     <div id="#top"></div>
     <section id="home">
-        <div class="container-fluid">
-            <img src="images/banner-bg.jpg" alt="Dutch windmill with swan"/>
-        </div>
+            <img  class="container-fluid" src="images/banner-bg.png" alt="Dutch windmill with swan" />
     </section>
 
     <section id="introText">
@@ -68,15 +39,25 @@
             </div>
         </div>
 
+        <hr>
+
     </section>
     <!--About-->
     <section id="aboutUs" class="secPad">
         <div class="container">
             <div class="heading text-center">
                 <!-- Heading -->
-                <h2>This website is about Hans van Riet the web developer. </h2>
-                <p>For the award winning television director Hans van Riet, click <a href="http://www.hansvanriet.com">here.</a></p>
+                <h1>This website is about Hans van Riet the web developer. </h1>
+                <div class="col-sm">
+                    <a href="http://www.hansvanriet.com"><img class="img-fluid" src="images/portfolio/img1.jpg" alt="Hans van Riet, Television Director" /></a>
+                </div>
+                <p>For the award winning television director Hans van Riet (same guy really...), click <a href="http://www.hansvanriet.com">here.</a></p>
             </div>
+
+            <br>
+            <hr>
+            <br>
+            
             <div class="row">
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
@@ -104,6 +85,11 @@
             </div>
         </div>
     </section>
+
+                <br>
+            <hr>
+            <br>
+
     <!--Quote-->
     <section id="quote" class="bg-parlex">
         <div class="parlex-back">
@@ -113,6 +99,10 @@
             <!--/.container-->
         </div>
     </section>
+
+                <br>
+            <hr>
+            <br>
     
     <!--Skills-->
     <section id="skills" class="secPad white">
@@ -209,9 +199,13 @@
             </div>
         </div>        
     </section>
+
+                <br>
+            <hr>
+            <br>
     
     <!--Experience-->
-    <section id="experience" class="secPad">
+    <section id="experience">
     	<div class="container">     
            <div class="heading text-center">
                 <!-- Heading -->
@@ -448,195 +442,117 @@
     </div>
     
     </section>
+
+     <section id="projects">
+        <div class="container-fluid">     
+           <div class="heading text-center">
+                <!-- Heading -->
+                <h2>freeCodeCamp Projects</h2>
+                <p>[Update 2019]... Some of these are old and broken, I just haven't had time to maintainn them...</p>
+            </div>
+        </div>
+    </section>
     
   
    <!--Portfolio-->
-    <section id="portfolio" class="page-section section appear clearfix secPad">
-        <div class="container">
-
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>Portfolio</h2>
-                <p>A selection of my web pages.</p>
-            </div>
-
+   <!-- class="page-section section appear clearfix secPad" -->
+    <section>
+        <div class="container-fluid">
             <div class="row">
-
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img1.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="http://www.hansvanriet.com">
-                                                <h5>Professional Site</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img2.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="tictactoe/index.html">
-                                                <h5>TicTacToe</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img3.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="weather/index.html">
-                                                <h5>Local Weather</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img4.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="pomodoro/index.html">
-                                                <h5>Pomodoro Clock</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img5.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="quotes/index.html">
-                                                <h5>Random Quotes</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img6.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="twitch/index.html">
-                                                <h5>Twitch Scanner</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img7.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="news/index.html">
-                                                <h5>Camper News</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                           <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img8.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="simon/index.html">
-                                                <h5>Simon</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img9.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="numbers/index.html">
-                                                <h5>Lucky Numbers</h5>
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img10.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="calc/index.html">
-                                                <h5>Calculator</h5>
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article> 
-                            
-                            <article class="col-sm-4 isotopeItem">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img11.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="wiki/index.html">
-                                                <h5>Wiki Viewer</h5>
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article> 
-
-
-                        </div>
-
-                    </div>
-
-
+                <div class="col-sm">
+                    <a href="tictactoe/index.html">
+                        <img class="img-fluid" src="images/portfolio/img2.jpg" alt="Link to TicTacToe"/>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="weather/index.html">
+                        <img class="img-fluid" src="images/portfolio/img3.jpg" alt="Link to Weather" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="numbers/index.html">
+                        <img class="img-fluid" src="images/portfolio/img9.jpg" alt="Link to Lottery Numbers" />
+                    </a>
                 </div>
             </div>
 
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <a href="pomodoro/index.html">
+                        <img class="img-fluid" src="images/portfolio/img4.jpg" alt="Link to Pomodoro Clock" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="quotes/index.html">
+                        <img class="img-fluid" src="images/portfolio/img5.jpg" alt="Link to Random Quotes" />
+                    </a>
+                </div>
+                                <div class="col-sm">
+                    <a href="calc/index.html">
+                        <img class="img-fluid" src="images/portfolio/img10.jpg" alt="Link to Calculator" />
+                    </a>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <a href="news/index.html">
+                        <img class="img-fluid" src="images/portfolio/img7.jpg" alt="Link to Camper News" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="simon/index.html">
+                        <img class="img-fluid" src="images/portfolio/img8.jpg" alt="Link to Simon" />
+                    </a>
+                </div>
+                                <div class="col-sm">
+                    
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <a href="twitch/index.html">
+                        <img class="img-fluid" src="images/portfolio/img6.jpg" alt="Link to Twitch" />
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a href="wiki/index.html">
+                        <img class="img-fluid" src="images/portfolio/img11.jpg" alt="Link to Wiki Viewer" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    
+                </div>
+            </div>
         </div>
     </section>
 
-	<!--Contact -->
-    <section id="contactUs" class="page-section secPad">
-        <div class="container">
+    <br>
+    <hr>
+    <br>
 
-            <div class="row">
-                <div class="heading text-center">
+          
+
+	<!--Contact -->
+    <section id="contactUs">
+        <div class="container text-center">
+
+            <div>
+                <div>
                     <!-- Heading -->
-                    <h2>Let's Stay In Touch!</h2>
+                    <h1>Let's Stay In Touch!</h1>
+                    <br>
                     <p>Thank you for visiting my portfolio page. For further inquiries, please use the contact information below.</p>
                 </div>
             </div>
 
             <div class="row">
 
-                <div class="col-sm-4 col-sm-offset-4 text-center">
+                <div class="container-fluid text-center">
                     <h4>Address:</h4>
                     <address>
                         House of Rock Productions, Inc.<br>
@@ -676,9 +592,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    © 2015 Hans van Riet
+                    © 2019 Hans van Riet
                 </div>
             </div>
+            <br>
+            <br>
             <!-- / .row -->
         </div>
     </section>

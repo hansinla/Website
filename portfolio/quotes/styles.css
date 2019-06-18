@@ -1,3 +1,9 @@
+body{
+  font-family: Helvetica, sans-serif;
+  background: url("images/books.jpg");
+  background-size: cover;
+}
+
 h1{
   padding-top: 50px;
   font-size: 80px;
@@ -6,10 +12,11 @@ h1{
   text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px white;
 }
 
-body{
-  font-family: Helvetica, sans-serif;
-  background: url("images/books.jpg");
-  background-size: cover;
+h3{
+  padding-top: 50px;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 #quote{
