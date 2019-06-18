@@ -1,8 +1,8 @@
 $(document).ready(function() {
   // set global vars for BG pictures
-  var coldURL = "http://host2post.com/server13/photos/S1H-6hjE6S1FUM~/wallpapers-trees-full-snow-cold-weather-december-mountains.jpg";
-  var mediumURL = "http://xbmc-favorites.googlecode.com/svn/trunk/skin/MARK-III/media/weather-background.png";
-  var warmURL = "http://cdn.meteo-europ.com/img/background/background.jpg";
+  var coldURL = "https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+  var mediumURL = "https://images.unsplash.com/photo-1553166273-94a88f4be8ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80";
+  var warmURL = "https://c.pxhere.com/photos/56/53/sunset_hammock_relaxation_bali_asia_indonesia_sun_water-1370185.jpg!d";
   // set other global vars
   var localWeather = {};
   var convertedTemp = 0, convertedMax = 0, convertedMin = 0;
@@ -11,6 +11,7 @@ $(document).ready(function() {
   // Check if browser provides location
   if ("geolocation" in navigator) {
     /* geolocation is available */
+    console.log("Geolocation is available!");
     navigator.geolocation.getCurrentPosition(function(position) {
       lat = position.coords.latitude;
       long = position.coords.longitude;
@@ -26,8 +27,8 @@ $(document).ready(function() {
   // Make the weather request
   function getWeather(lat, long) {
     gettingData = true;
-    var APIKey = 'fac0fa8a545361692244689ce37ebd1e';
-    var requestString = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=" + APIKey;
+    var APIKey = 'fac0fa8a545361692244689ce37ebd1e'; 
+    var requestString = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=" + APIKey;
     request = new XMLHttpRequest();
     request.onload = proccessResults;
     request.open("get", requestString, true);
@@ -48,7 +49,7 @@ $(document).ready(function() {
       localWeather.windSpeed   = results.wind.speed;
       localWeather.windDegrees = getWindDirection(results.wind.deg);
       localWeather.windGust    = results.wind.gust ? results.wind.gust : 0;
-      localWeather.icon        = "http://openweathermap.org/img/w/" + results.weather[0].icon  + ".png";
+      localWeather.icon        = "https://openweathermap.org/img/w/" + results.weather[0].icon  + ".png";
       localWeather.coordinates = [results.coord.lon, results.coord.lat];
       }
 
