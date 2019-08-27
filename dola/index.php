@@ -1,3 +1,24 @@
+<?php 
+
+if(isset($_POST['submit'])){
+    $to = "hansinla@mac.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Information request";
+    $subject2 = "Confirmation";
+    $message = $first_name . " " . $last_name . " wants more information." . "\n\n";
+    $message2 = "Your message was received " . $first_name . ".\n\n";
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +74,9 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="text-center">
-        <h1 class="text-uppercase">Drones&nbsp;over&nbsp;LA</h1>
+<!--         <h1 class="text-uppercase">Drones&nbsp;over&nbsp;LA</h1>
+ -->        
+        <img src="img/LTGray.png" class="img-fluid">
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Stunning footage for every production.</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Explore</a>
       </div>
@@ -65,11 +88,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Drones over LA</h2>
-          <p class="text-white-50">Get unique perspectives to add tremendous production value to your project.</p>
+<!--           <h2 class="text-white mb-4">Drones over LA</h2>
+ -->         
+        <p class="text-white-50">Get unique perspectives to add tremendous production value to your project.</p>
         </div>
       </div>
-      <img src="img/gradient_fill.png" class="img-fluid" alt="">
+      <img src="img/DKGray.png" class="img-fluid" alt="">
     </div>
   </section>
 
@@ -85,7 +109,7 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Coming soon</h4>
-            <!-- <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p> -->
+
           </div>
         </div>
       </div>
@@ -138,9 +162,11 @@
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          <form   action="" method="post">
+            <input class="form-control" type="text"  id="" placeholder="First name" name="first_name"><br>
+            <input class="form-control" type="text"  id="" placeholder="Last name" name="last_name"><br>
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." name="email"><br>
+            <button type="submit" name="submit" class="btn btn-primary mx-auto">Subscribe</button>
           </form>
 
         </div>
@@ -172,7 +198,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hansinla@mac.com</a>
+                <a href="mailto:hansinla@mac.com">hansinla@mac.com</a>
               </div>
             </div>
           </div>
@@ -190,17 +216,19 @@
         </div>
       </div>
 
+      
       <div class="social d-flex justify-content-center">
         <a href="#" class="mx-2">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#" class="mx-2">
+        <a href="https://www.facebook.com/Drones-over-LA-100165478008351/" class="mx-2">
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="#" class="mx-2">
           <i class="fab fa-github"></i>
         </a>
       </div>
+
 
     </div>
   </section>
@@ -211,6 +239,24 @@
       Copyright &copy; Drones over LA 2019
     </div>
   </footer>
+
+<!-- Default Statcounter code for Drones over LA
+https://www.hansvanriet.com/dola/index.html -->
+<script type="text/javascript">
+var sc_project=12062299; 
+var sc_invisible=0; 
+var sc_security="a7c0caec"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12062299/0/a7c0caec/0/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
